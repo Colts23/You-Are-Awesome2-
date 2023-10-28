@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func messageButtonPressed(_ sender: Any) {
+    @IBAction func messageButtonPressed(_ sender: UIButton) {
         
         print("Message button pressed")
         
@@ -34,16 +34,18 @@ class ViewController: UIViewController {
         messageLabel2.textColor = UIColor.white
         messageLabel2.textAlignment = .center
         
+        imageView.image = UIImage(named: "Venice")
+        
     }
 
     @IBAction func messageButtonPressed2(_ sender: UIButton) {
         
+        print("Message button pressed again")
         messageLabel.text = ""
         messageLabel2.text = ""
         
     }
     
-
     
 
 }
